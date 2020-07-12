@@ -1,58 +1,100 @@
-// 1 Задача
-let userName = prompt("Введите имя");
+/*1. Написать функцию, которая принимает строку и выводит
+статистику о ней: количество букв, количество цифр и
+количество других знаков.*/
 
-alert("Привет, " + userName + "!");
+let str1 = prompt('Введите строку');
 
-// 2 Задача
+function sumLetAndNum(str, numbers = /[0-9]/, letters = /[a-zа-я]/i){
+	let sumNum = 0;
+	let sumLet = 0;
+	let sumSign = 0;
 
-const yearNow = 2020; // Текущий год
-let yearBorn;
+	str1.split('').forEach(a => numbers.test(a) === true ? ++sumNum : letters.test(a) === true ? ++sumLet:  ++sumSign);
+	return `Количество цифр - ${sumNum}, количество букв - ${sumLet}, количество знаков - ${sumSign}.`;
+}
+console.log(sumLetAndNum(str1));
 
-yearBorn = +prompt("Введите год рождения");
+/*3. Написать функцию, которая заменяет в полученной строке
+большие буквы на маленькие, маленькие – на большие, а
+цифры – на знак нижнего подчеркивания.*/
 
-alert("Вам " + (yearNow - yearBorn) + " лет!");
+let str3 = prompt('Введите строку');
 
-// 3 Задача
+function changeLetAndNum (str) {
+	const upperLetters = /[A-ZА-Я]/;
+	const lowerLetters = /[a-zа-я]/;
 
-let sideBox = +prompt("Введите сторону квадрата");
+ return str.replace(/[0-9]/g, '_').replace(/[a-zа-я]/gi, a => upperLetters.test(a) === true ? a.toLowerCase(): lowerLetters.test(a) === true ? a.toUpperCase() : null);
+}
 
-alert("Периметр квадрата равен " + sideBox * 4);
+console.log(changeLetAndNum(str3));
 
-// 4 Задача
+/*4. Написать функцию, которая преобразует названия css-
+стилей с дефисом в название в СamelСase стиле: font-size
+в fontSize, background-color в backgroundColor, textalign
+в textAlign.*/
 
-let radius = +prompt("Введите радиус окружности");
+let style = 'text-decoration';
 
-alert("Площадь окружности равна " + Math.PI * Math.pow(radius, 2));
+function styleCamelCase (stylesName) {
+	return stylesName.split('-').slice(0, 1) + String(stylesName.split('-').slice(1)).charAt(0).toUpperCase() + String(stylesName.split('-').slice(1)).slice(1);
+}
 
-// 5 Задача
+console.log(styleCamelCase (style));
 
-let distance = +prompt("Введите расстояние между городами в км");
-let time = +prompt("Введите время в часах");
+/*5. Написать функцию, которая принимает словосочетание
+и превращает его в аббревиатуру.
+Например: cascading style sheets в CSS, объектно-
+ориентированное программирование в ООП.*/
 
-alert("Ваша скорость будет равна " + distance / time + " км/ч");
+let phrase = prompt('Введите фразу для получения аббревиатуры');
 
-// 6 Задача
-const euro = 1.11; // Курс евро к доллару
-let dollar; //Количество долларов
+function abbreviation (str) {
+	return str.split(' ').reduce((result, word) => result + word.charAt(0).toUpperCase(), '');
+}
 
-dollar = +prompt("Введите сумму");
+console.log(abbreviation(phrase));
 
-alert(dollar * euro + " Euro");
+/*6. Написать функцию, которая принимает любое коли-
+чество строк, объединяет их в одну длинную строку и
+возвращает ее.*/
 
-// 7 Задача
-let gigaBite;
-let megaBite;
-const fileSize = 820;
+let strArray = [
+	{value: 'функция,'},
+	{value: ' которая принимает'},
+	{value: ' любое количество строк,'},
+	{value: ' объединяет их'},
+	{value: ' в '},
+	{value: 'строку'}
+];
 
-gigaBite = +prompt("Введите размер флешки в ГБ");
-megaBite = 1024 * gigaBite;
+function strConcat (str) {
+	return str.reduce((sum, obj) => sum + obj.value, '');
+}
 
-alert("У вас поместится " + Math.floor(megaBite / fileSize) + " файлов");
+console.log(strConcat(strArray));
 
-// 8 Задача
-let sumMoney = +prompt("Введите количество денег в кошелке");
-let priceOfChocolate = +prompt("Введите стоимость шоколадки");
-let AllChocolates = Math.floor(sumMoney / priceOfChocolate);
+/*7. Написать функцию – калькулятор. Функция принимает
+строку с примером, определяет, какое действие необходимо
+выполнить (+ - * /), переводит операнды в числа, решает
+пример и возвращает результат.*/
 
-alert("Вы купите " + AllChocolates + " шоколадок, ваша сдача составит " + (sumMoney - AllChocolates * priceOfChocolate)
-);
+let num7 = prompt('Введите ваш пример');
+
+function mathematic (str) {
+	return eval(str);
+}
+
+console.log(mathematic(num7));
+
+/*8. Написать функцию, которая получает url и выводит под-
+робную информацию о нем.
+Например: url “https://itstep.org/ua/about”, информация
+“протокол: https, домен: itstep.org, путь: /ua/about”.*/
+
+let url = new URL('https://itstep.org/ua/about');
+
+function infoAboutUrl (u) {
+	return `Url - ${u.href}\n Информация:\n протокол - ${u.protocol}\n домен - ${u.host}\n путь - ${u.pathname + u.search + u.hash}`;
+}
+console.log(infoAboutUrl(url));

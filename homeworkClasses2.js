@@ -21,7 +21,7 @@ class Marker {
   print() {
     if (this.percent <= 0) {
       let question = confirm('Требуется заправка. Хотите зарядить маркер?');
-      question === true ? this.refillMarker = 100 : null;
+      question ? this.refillMarker = 100 : null;
     }
     if (this.percent > 0) {
       let text = prompt('type text');
@@ -30,7 +30,7 @@ class Marker {
           sum++;
         } return sum;
       }, 0);
-      let textPrint = text.slice(0, ((this.percent + spaces) / 0.5));
+      let textPrint = text.slice(0, ((this.percent + spaces / 2) / 0.5));
       document.write(`<div style="color: ${this.color}">${textPrint}</div>`);
       this.percent = this.percent - (textPrint.length - spaces) / 2;
       if (this.percent <= 0) {

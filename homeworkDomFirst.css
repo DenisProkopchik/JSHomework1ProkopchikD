@@ -1,0 +1,126 @@
+.input--box {
+	background-color: #390;
+	height: 100px;
+	width: 300px;
+	padding: 15px 0;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+.input--top {
+	font-weight: 600;
+	color: #fff;
+}
+.input--bottom {
+
+}
+
+.modalBox{
+	padding: 15px 0;
+	width: 300px;
+}
+#modalOpenButton{
+	width: 100%;
+}
+.modalWindowBox{
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color:  rgba(120, 120, 120, 0.5);
+}
+.modalWindow {
+	background-color: #acd;
+	width: 25%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.modalText {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.footBall{
+	display: none;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://thumbs.dreamstime.com/b/%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83%D1%80%D0%B0-%D0%B7%D0%B5-%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B0-%D1%82%D1%80%D0%B0%D0%B2%D1%8B-%D1%84%D1%83%D1%82%D0%B1%D0%BE-%D0%B0-%D0%BF%D0%BE-%D1%8F-%D0%BF%D1%80%D0%B5-%D0%BF%D0%BE%D1%81%D1%8B-%D0%BA%D0%B8-%D0%B2%D0%B7%D0%B3-%D1%8F-%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83-64960943.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.balls{
+	position: absolute;
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-image: url(http://pngimg.com/uploads/football/football_PNG52795.png); 
+	background-size: 100% 100%;
+	
+}
+.turnDisplay{
+	display: block;
+	position: fixed;
+	top: 0;
+}
+
+
+.trafficLighBox {
+	width: 400px;
+	height: 150px;
+	background-color: #023;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.trafficLigh {
+	display: flex;
+	align-items: center;
+}
+.circle {
+	margin: 0 10px; 
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+	border-radius: 26px;
+	background-color: #999;
+}
+
+.itemOrange{
+	background-color: orange;
+}
+.listBox {
+	width: 50%;
+}
+.listItem {
+	border: 2px solid #000;
+	border-bottom: none;
+	cursor: pointer;
+}
+.listItem:hover{
+	transition: all 0.3s;
+	color: #09f;
+}
+.listItem:last-child{
+	border-bottom: 2px solid #000;
+}
+
+.boxButtonTilte{
+	padding-top: 0px;
+}
+.buttonTilte{
+ position: relative;
+}
+

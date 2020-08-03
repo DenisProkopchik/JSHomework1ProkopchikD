@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework</title>
+  <link rel="stylesheet" type="text/css" href="homeworkDomSecond.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="task">
+      <h3>Задание 5</h3>
+      Создать html-страницу, на которой пользователь может ввести номер месяца, год, и получить календарь на указанный
+      месяц. Календарь можно генерировать с помощью таблицы. Начальный день недели всегда должен быть понедельник.
+    </div>
+    <div class="calendar--wrapper">
+      <form class="calendar--form">
+        <div class="calendar--month__set">
+          <div class="calendar--month--title">
+            Month:
+          </div>
+          <div class="calendar--box__imput">
+            <input class="calendar--imput" type="number" required="">
+          </div>
+        </div>
+        <div class="calendar--year__set">
+          <div class="calendar--year--title"> Year:
+          </div>
+          <div class="calendar--box__imput">
+            <input class="calendar--imput" type="number" required="">
+          </div>
+        </div>
+        <div class="calendar--date__submit">
+          <button class="calendar--date__button">
+            Получить календарь
+          </button>
+        </div>
+      </form>
+      <div class="calendar--table--wrapper">
+
+      </div>
+    </div>
+    <div class="task">
+      <h3>Задание 1</h3>
+      Создать html-страницу с трекбаром.
+      Предоставить пользователю возможность изменять положение
+      синего указателя.
+    </div>
+    <div class="trek--bar--box">
+      <div class="trek--bar">
+        <div class="trek--pointer">
+        </div>
+      </div>
+      <div class="trek--result">0%</div>
+    </div>
+    <div class="task">
+      <h3>Задание 2</h3>
+      Создать html-страницу с галереей.
+      В один момент времени на экране отображается одно изо-
+      бражение и две кнопки: Назад и Вперед. При нажатии на кнопки
+      изображения должны переключатся в указанном порядке. Когда
+      следующего/предыдущего изображения нет, то соответствующую
+      кнопку необходимо блокировать. Изображения хранить в заранее
+      подготовленном массиве.
+    </div>
+    <div class="slider--box">
+      <div class="arrows--block">
+        <div class="arrows" id="arrowLeft"> &#8592</div>
+      </div>
+      <div class="slider--wind">
+        <div class="slide--img--box">
+          <img src="https://img.icons8.com/dusk/2x/html-5.png" alt="img--html" class="slide--img">
+          <div class="name">HTML</div>
+        </div>
+        <div class="slide--img--box">
+          <img src="https://img.icons8.com/dusk/2x/css3.png" alt="img--css" class="slide--img">
+          <div class="name">CSS</div>
+        </div>
+        <div class="slide--img--box">
+          <img src="https://img.icons8.com/dusk/2x/javascript-logo.png" alt="img--js" class="slide--img">
+          <div class="name">JS</div>
+        </div>
+        <!-- Закоментированный блок для проверки того что слайдер работает с любым количеством блоков -->
+        <!-- <div class="slide--img--box">
+					<img src="https://img.icons8.com/dusk/2x/python.png" alt="img--python" class="slide--img">
+					<div class="name">Python</div>
+				</div> -->
+      </div>
+      <div class="arrows--block">
+        <div id="arrowRight" class="arrows">&#8594</div>
+      </div>
+    </div>
+    <div class="task">
+      <h3>Задание 3</h3>
+      Создать html-страницу с блоками информации, которые от-
+      крываются по щелчку на заголовок. В один момент времени может
+      быть развернут только один блок информации.
+    </div>
+    <div class="info--wrapper">
+      <div class="info--block">
+        <div class="info--block--title">
+          <div class="title--name"> Title №1</div>
+          <div class="title--hide">Скрыть текст</div>
+        </div>
+        <div class="info--block--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam debitis
+          voluptatibus, quas odit eos sed recusandae sunt quae fugiat, quis, dolore ex eaque est iusto quasi minima
+          adipisci nisi error?Veniam debitis voluptatibus, quas odit eos sed recusandae sunt quae fugiat, quis, dolore
+          ex eaque est iusto quasi minima adipisci nisi error?Veniam debitis voluptatibus, quas odit eos sed recusandae
+          sunt quae fugiat, quis, dolore ex eaque est iusto quasi minima adipisci nisi error?</div>
+      </div>
+      <div class="info--block">
+        <div class="info--block--title">
+          <div class="title--name">Title №2</div>
+          <div class="title--hide">Скрыть текст</div>
+        </div>
+        <div class="info--block--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis non
+          reprehenderit cupiditate eaque incidunt, debitis iusto. Unde consectetur itaque distinctio dolore quisquam sed
+          inventore, aspernatur odit nemo exercitationem ratione!Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Nulla nobis non reprehenderit cupiditate eaque incidunt, debitis iusto. Unde consectetur itaque
+          distinctio dolore quisquam sed inventore, aspernatur odit nemo exercitationem ratione!Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Nulla nobis non reprehenderit cupiditate eaque incidunt, debitis iusto.
+          Unde consectetur itaque distinctio dolore quisquam sed inventore, aspernatur odit nemo exercitationem ratione!
+        </div>
+      </div>
+      <div class="info--block">
+        <div class="info--block--title">
+          <div class="title--name">Title №3</div>
+          <div class="title--hide">Скрыть текст</div>
+        </div>
+        <div class="info--block--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus blanditiis
+          quam labore impedit delectus est consequuntur, veritatis non nesciunt eum consectetur. Cumque illum ut quod.
+          Assumenda, ipsa adipisci qui architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+          blanditiis quam labore impedit delectus est consequuntur, veritatis non nesciunt eum consectetur. Cumque illum
+          ut quod. Assumenda, ipsa adipisci qui architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Doloribus blanditiis quam labore impedit delectus est consequuntur, veritatis non nesciunt eum consectetur.
+          Cumque illum ut quod. Assumenda, ipsa adipisci qui architecto.</div>
+      </div>
+      <div class="info--block">
+        <div class="info--block--title">
+          <div class="title--name">Title №4</div>
+          <div class="title--hide">Скрыть текст</div>
+        </div>
+        <div class="info--block--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias reprehenderit
+          laboriosam fugiat ducimus minus libero. Odio quaerat at fuga ipsa iure a inventore autem dignissimos labore
+          cumque, porro quisquam soluta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias reprehenderit
+          laboriosam fugiat ducimus minus libero. Odio quaerat at fuga ipsa iure a inventore autem dignissimos labore
+          cumque, porro quisquam soluta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias reprehenderit
+          laboriosam fugiat ducimus minus libero. Odio quaerat at fuga ipsa iure a inventore autem dignissimos labore
+          cumque, porro quisquam soluta.</div>
+      </div>
+    </div>
+    <div class="task">
+      <h3>Задание 4</h3>
+      Создать html-страницу с новостями.
+      Необходимо отлавливать, когда скролл доходит до конца страницы, и догружать еще новости в список. Новости для
+      подгрузки
+      хранить в заранее подготовленном массиве.
+      Облегченный вариант: вместо отлова, когда скролл дойдет до конца страницы, используйте кнопку в конце списка
+      новостей.
+    </div>
+    <div class="news--wrapper">
+      <div class="news--block">
+        <h4 class="news--title">Title of news №1</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eligendi atque iusto
+          minus perspiciatis placeat sapiente fugiat saepe, quod. Sapiente fugiat non adipisci sint voluptatibus ad
+          architecto dolorem impedit, vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque,
+          molestias accusamus! At, nemo ducimus reiciendis deleniti fugiat dicta rem ipsam qui, mollitia, recusandae
+          corporis? At reiciendis eaque soluta delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Commodi enim, natus necessitatibus minima nisi mollitia! Cupiditate, dolore eius optio. Temporibus dolorem
+          qui, facilis quia dolores beatae enim necessitatibus sapiente obcaecati!</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №2</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ducimus officia nulla
+          doloribus, totam deserunt, consectetur praesentium nesciunt consequatur veritatis repellat cum aliquam nemo!
+          Aperiam nulla autem cumque non, voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+          rerum eius fugit amet aliquam praesentium. Consequuntur molestias sed esse, neque unde culpa laboriosam
+          perspiciatis omnis exercitationem minus consequatur, vero quas. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Incidunt voluptatum hic provident. Aspernatur repellat voluptate laboriosam laudantium, et
+          porro sunt, dignissimos ex sint, enim consectetur culpa eveniet illo tempora quam.</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №3</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cum quaerat dolore!
+          Porro tempore blanditiis laborum corrupti, id, ratione ea quia minus cum illo labore consequuntur impedit et
+          explicabo officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus, porro soluta
+          consequuntur magnam tenetur ducimus velit sint asperiores, numquam temporibus doloribus at totam tempore magni
+          eaque reiciendis voluptatem illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis
+          at qui deleniti excepturi, nulla, porro dolorum illo explicabo architecto. Voluptate fuga incidunt temporibus
+          quos impedit, sit totam accusamus vel.</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №4</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem illum nihil
+          ad sed numquam recusandae nostrum consectetur. Ad iusto placeat ducimus impedit nostrum est aperiam ipsum rem,
+          repellendus necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quo amet, saepe
+          nulla accusamus non vero eius odio facilis possimus dolorem iste maiores sed deserunt vel, praesentium laborum
+          ullam quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam maxime reiciendis sunt eaque
+          expedita commodi consequuntur totam illo nostrum officia quo cumque aspernatur maiores temporibus adipisci,
+          eum ut modi. Maxime.</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №5</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et, repudiandae, at
+          rerum a rem odit. Repudiandae consectetur similique tenetur reprehenderit ratione quis sint in. Reprehenderit
+          voluptates, ratione necessitatibus odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+          recusandae assumenda, nam officia vitae ipsum facere soluta temporibus mollitia natus. Dolores nihil odio iste
+          non eveniet similique sit perferendis corrupti! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Dignissimos quibusdam id voluptates similique, nesciunt recusandae voluptatum, perferendis magni impedit,
+          assumenda rerum ducimus optio numquam. Error nulla voluptatibus praesentium. Quod, quidem.</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №6</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi omnis reprehenderit vero
+          rem repellendus, pariatur tempore sit, aliquid. Sed voluptas cupiditate ipsa corporis debitis delectus
+          praesentium eos soluta reiciendis accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Blanditiis, at amet nemo suscipit illo fugit ullam tempore. Eaque officiis voluptatum repellat voluptatibus,
+          inventore ipsum quos quis autem distinctio praesentium vel! Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Dolores, libero. Nulla quaerat officia, provident suscipit nihil et, ab excepturi. Tempora
+          quos minima iste nisi a eum magni earum nulla, adipisci.</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №7</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi omnis reprehenderit vero
+          rem repellendus, pariatur tempore sit, aliquid. Sed voluptas cupiditate ipsa corporis debitis delectus
+          praesentium eos soluta reiciendis accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Blanditiis, at amet nemo suscipit illo fugit ullam tempore. Eaque officiis voluptatum repellat voluptatibus,
+          inventore ipsum quos quis autem distinctio praesentium vel! Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Dolores, libero. Nulla quaerat officia, provident suscipit nihil et, ab excepturi. Tempora
+          quos minima iste nisi a eum magni earum nulla, adipisci.</div>
+      </div>
+      <div class="news--block">
+        <h4 class="news--title">Title of news №8</h4>
+        <div class="news--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi omnis reprehenderit vero
+          rem repellendus, pariatur tempore sit, aliquid. Sed voluptas cupiditate ipsa corporis debitis delectus
+          praesentium eos soluta reiciendis accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Blanditiis, at amet nemo suscipit illo fugit ullam tempore. Eaque officiis voluptatum repellat voluptatibus,
+          inventore ipsum quos quis autem distinctio praesentium vel! Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Dolores, libero. Nulla quaerat officia, provident suscipit nihil et, ab excepturi. Tempora
+          quos minima iste nisi a eum magni earum nulla, adipisci.</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript" src="homeworkDomSecond.js"></script>
+
+</html>

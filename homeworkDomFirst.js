@@ -88,7 +88,8 @@ footBallPlay.onclick = function (event) {
 				xBall > posX ? posX+=1 : xBall < posX ? posX-=1 : null;
 				yBall > posY ? posY+=1 : yBall < posY ? posY-=1 : null;
 				ball.style.top = `${posY}px`;
-				ball.style.left = `${posX}px`; 
+        ball.style.left = `${posX}px`; 
+        coordinatBall.value = `${posX}px:${posY}px`;
 			}
 		}
 		let int = setInterval(anim, 10);*/

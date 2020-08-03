@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework</title>
+  <link rel="stylesheet" type="text/css" href="homeworkDomFirst.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- Задание 1 
+		Создать html-страницу для ввода имени пользователя.
+		Необходимо проверять каждый символ, который вводит поль-
+		зователь. Если он ввел цифру, то не отображать ее в input.-->
+    <h2>Задание 1</h2>
+    <div class="input--box">
+      <form class="form">
+        <div class="input--top">Введите имя без цифр</div>
+        <input required="" name="form" class="input--name--write" id="inputName" value="" onkeyup="checkName(this)">
+        <input type="submit" name="form" class="input--bottom" id="submitName">
+      </form>
+    </div>
+    <!-- 	Задание 2
+		Создать html-страницу с кнопкой Открыть и модальным
+		окном. На модальном окне должен быть текст и кнопка Закрыть.
+		Изначально модальное окно не отображается. При клике на
+		кнопку Открыть появляется модальное окно, на кнопку Закрыть –
+		исчезает. -->
+    <h2>Задание 2</h2>
+    <div class="modalBox">
+      <button id="modalOpenButton">
+        Open the modal window
+      </button>
+      <div class="modalWindowBox">
+        <div class="modalWindow">
+          <div class="modalText">
+            The modal window
+          </div>
+          <button id="modalClosedButton">
+            CLOSED the modal window
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Задание 3
+		Создать html-страницу с футбольным полем, которое зани-
+		мает всю ширину и высоту экрана, и мячом размером 100 на 100
+		пикселей.
+		Сделать так, чтобы при клике мышкой по полю, мяч плавно
+		перемещался на место клика. Учтите: необходимо, чтобы центр
+		мяча останавливался именно там, где был совершен клик мышкой.
+		Также предусмотрите, чтобы мяч не выходил за границы поля. -->
+    <h2>Задание 3</h2>
+    <div class="boxFootBall">
+      <button class="turnFootball" id="buttonTurnOnFootball">Вкл футбольное поле</button>
+      <div class="footBall" id="footBallPlay">
+        <button class="turnFootball" id="buttonTurnOffFootball">Выкл футбольное поле</button>
+        <input type="text" class="coordinat" id="coordinatBall">
+        <div class="balls" id="ball">
+
+        </div>
+      </div>
+    </div>
+    <!-- Задание 4
+		Создать html-страницу со светофором и кнопкой, которая
+		переключает светофор на следующий цвет. -->
+    <h2>Задание 4</h2>
+    <div class="trafficLighBox">
+      <div class="trafficLigh" id="signal">
+        <div class="circle" id="circleRed"></div>
+        <div class="circle" id="circleYellow"></div>
+        <div class="circle" id="circleGreen"></div>
+      </div>
+      <button class="trafficLighButton" id="trafficLighButton">
+        Next
+      </button>
+    </div>
+    <!-- 	
+		Задание 5
+		Создать html-страницу со списком книг.
+		При щелчке на книгу, цвет фона должен меняться на оранжевый.
+		Учтите, что при повторном щелчке на другую книгу, предыдущей –
+		необходимо возвращать прежний цвет. -->
+    <h2>Задание 5</h2>
+    <ol class="listBox" id="listBook">
+      <li class="listItem" id="book1">Бычкова, С.М. Планирование в аудите [Текст]/ С.М. Бычкова, А.В. Газорян.-Москва:
+        Финансы и статистика, 2001. – 263 с.</li>
+      <li class="listItem" id="book2">Краснова, Л.П. Бухгалтерский учет [Текст]: учебник для вузов /Л.П. Краснова, Н.Т.
+        Шалашова, Н.М. Ярцева. – Москва: Юристъ, 2001. – 550 с.</li>
+      <li class="listItem" id="book3">Лесоводство [Текст]: учебное пособие к курсовому проектированию/З.В. Ерохина, Н.П.
+        Гордина, Н.Г. Спицына, В.Г. Атрохин. – Красноярск: Изд-во СибГТУ, 2000. - 175 с.</li>
+      <li class="listItem" id="book4">Логика [Текст]: учебное пособие для 10-11 классов / А.Д. Гетманова, А.Л.
+        Никифоров, М.И. Панов и др. – Москва: Дрофа, 1995. – 156 с.</li>
+      <li class="listItem" id="book5">Ашервуд Б. Азбука общения [Текст] / Б. Ашервуд; пер. с анг. И.Ю.Багровой и Р.З.
+        Пановой, науч. ред. Л.М. Иньковой. – Москва: Либерея, 1995. – 175 с.</li>
+      <li class="listItem" id="book6">Иллюстрированный словарь английского и русского языка с указателями [Текст]. –
+        Москва: Живой язык, 2003. – 1000 с.</li>
+    </ol>
+    <!-- Задание 6
+		Создать html-страницу с несколькими кнопками.
+		При наведении на кнопку, должна появляться подсказка с тек-
+		стом. По умолчанию – подсказка появляется сверху от кнопки. Но
+		если она не помещается сверху от кнопки, тогда отображается снизу. -->
+    <h2>Задание 6</h2>
+    <div class="boxButtonTilte" id="boxButtonTilte6">
+      <button class="buttonTilte" id="buttonTitleOne">Кнопка1</button>
+      <button class="buttonTilte" id="buttonTitleTwo">Кнопка2</button>
+    </div>
+    <h2>Текст ниже для проверки шестого задания</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos placeat expedita debitis quisquam nisi, ex sequi
+      suscipit optio esse sapiente. Ipsum iste, necessitatibus facere exercitationem, dignissimos ab nisi provident
+      cumque.</div>
+    <div>Animi facilis accusamus quidem necessitatibus deleniti, quam dolores debitis quasi. Magni adipisci, soluta, quo
+      architecto odio porro suscipit ratione veniam enim nam, possimus sapiente tempora repellendus maiores molestias
+      error, iste.</div>
+    <div>Illum nemo distinctio eaque temporibus nam molestias unde eveniet eligendi magni asperiores. Reprehenderit,
+      error, consequatur. Officia quidem autem ea earum? Veniam, temporibus. Minus deleniti ea, veritatis repudiandae
+      minima porro vitae!</div>
+    <div>Ipsam illo dolorem aliquam, odit earum porro cum neque ratione architecto cupiditate temporibus quod officiis
+      quas voluptates id amet enim, corporis accusantium placeat? Totam labore id est adipisci maiores doloribus!</div>
+    <div>Dicta, neque, dignissimos! In cupiditate labore voluptatum officia, itaque ducimus, nisi maxime repellat vitae
+      fuga voluptatem dolores amet ea est debitis vero corporis, obcaecati saepe, voluptatibus exercitationem atque.
+      Iusto, aut!</div>
+    <div>Quis eaque expedita aliquam alias eos possimus iste vero, consequatur, facere eum reprehenderit deserunt culpa
+      optio est, provident error explicabo exercitationem at maxime. Nesciunt explicabo impedit, dicta blanditiis est.
+      Cum!</div>
+    <div>Consectetur, modi, autem. Dolores ad voluptate sint, vel hic maxime commodi doloremque exercitationem, cum
+      reiciendis dignissimos nisi, nam, mollitia debitis. Aliquam dolores doloribus odio magni cumque, officiis
+      voluptatum nostrum eos.</div>
+    <div>Itaque voluptate dolor aut nam est alias, cum laudantium, velit perspiciatis vitae! Sint iusto aperiam labore
+      officiis reprehenderit, consectetur aliquid corporis tempore repudiandae molestiae cupiditate obcaecati recusandae
+      impedit sunt, in!</div>
+    <div>Aliquid odio sapiente placeat tempore deleniti nesciunt incidunt, reprehenderit praesentium sint, provident,
+      vel qui. Soluta ipsum a, nam beatae fugiat. Voluptatum laudantium blanditiis illum, nostrum saepe nisi ea
+      doloribus necessitatibus?</div>
+    <div>Placeat quia beatae consequuntur excepturi voluptates minus, qui possimus illo et iure, itaque, perspiciatis
+      quam animi quos ipsa consequatur minima! Id facilis quam deserunt dolor obcaecati magnam exercitationem facere
+      sint.</div>
+    <div>Veniam, accusamus temporibus harum ipsum quo quibusdam, laboriosam recusandae ad itaque rerum dignissimos ut,
+      tenetur excepturi, tempora aliquam ipsa quae ex. Similique quo modi animi. Facere at ea quos sunt.</div>
+    <div>Expedita esse non a, incidunt amet eum aliquam consequuntur, soluta laboriosam, rem architecto illum cumque
+      nobis perspiciatis aut. A, ducimus accusantium eum accusamus cumque blanditiis. Reprehenderit perspiciatis
+      voluptas totam aperiam!</div>
+    <div>Nam asperiores iste, harum eum delectus dolorem perspiciatis unde vel fuga similique sint, doloremque neque
+      dignissimos provident exercitationem? Magni voluptatum inventore odio ipsam reiciendis cum excepturi eos sint,
+      eveniet? Nesciunt.</div>
+    <div>Architecto sunt molestiae blanditiis, ratione necessitatibus possimus hic fuga, laboriosam corporis natus
+      dicta! Accusantium commodi non ipsum maxime nobis, impedit nostrum totam, cumque, quod ab quasi voluptatum vero
+      reprehenderit numquam.</div>
+    <div>Blanditiis molestiae tenetur facere dolorem quisquam, laborum alias natus, facilis veniam magnam libero ad
+      distinctio et adipisci id eum voluptas laudantium sequi. Consequuntur voluptatibus animi, molestiae ratione
+      reprehenderit officiis voluptas?</div>
+    <div>Ullam odit, distinctio voluptatibus illo, eum possimus deleniti quos nemo suscipit quibusdam praesentium
+      perspiciatis rerum fugit dolorum provident. Consectetur laudantium aliquam consequatur dolor! Earum, fugiat, nulla
+      sit numquam pariatur consequuntur!</div>
+    <div>Quis nisi doloribus laborum delectus cupiditate adipisci similique quos excepturi officia animi! Hic minus,
+      ipsam amet numquam facere, delectus iusto quasi, sed, quaerat aperiam iure cum quibusdam vitae illum tempora.
+    </div>
+    <div>Expedita impedit consectetur odit eos ad sed voluptatem culpa a deserunt, reprehenderit asperiores ullam
+      adipisci ratione doloremque maiores commodi provident debitis fuga dolorum esse rerum atque nesciunt mollitia
+      quaerat hic.</div>
+    <div>Impedit id, aspernatur, praesentium dolorem voluptatem architecto ab repellat omnis. Similique exercitationem
+      eum aut voluptatem ducimus cum, quaerat quia, quo quidem doloremque sunt. Ipsum, ea, inventore maiores excepturi
+      consequatur in.</div>
+    <div>Aperiam fuga repellat amet laboriosam suscipit? Libero suscipit, sit eos. Mollitia nam, beatae, sint deserunt
+      dolorem ab, consectetur unde inventore, explicabo accusamus dolorum error? Sequi corporis eum dignissimos laborum
+      dolorem.</div>
+    <div>Beatae voluptate nemo quo pariatur ratione optio impedit perspiciatis ducimus eligendi! Atque ipsam voluptate
+      magnam debitis rerum numquam modi sint amet praesentium. Vitae aspernatur quo consequuntur quis accusamus quisquam
+      qui.</div>
+    <div>Fugiat laborum, ea sunt, incidunt dicta tempora fugit blanditiis ex quasi, eaque doloribus hic quidem. Nisi,
+      illum cumque? Quos rem similique laborum repudiandae sit quisquam molestias itaque voluptates error repellat.
+    </div>
+    <div>Alias nostrum impedit quam, excepturi culpa pariatur rem deleniti rerum eligendi quos dolor accusamus assumenda
+      dignissimos magnam voluptatibus esse accusantium, ipsam quo dolorum tempore molestiae ullam corporis in delectus.
+      Est.</div>
+    <div>Sequi odit cumque a, natus dolores, sunt quas optio. Ratione enim, laudantium repellat cupiditate harum est
+      voluptas optio amet ipsum, voluptates vel sint quo et, beatae ullam minus velit atque.</div>
+    <div>Hic neque ipsum excepturi voluptatem similique nobis odio laudantium non porro ab, ut nisi doloremque quasi,
+      explicabo repellat, velit nihil incidunt deleniti. Vel odit ut necessitatibus, aliquam laboriosam amet magnam.
+    </div>
+    <div>Dolorum cum id vitae, nihil, at qui, obcaecati quod repellat atque vel ea, est labore amet inventore quaerat
+      praesentium. Laudantium ea ipsam magni laborum rerum possimus laboriosam cumque dignissimos eveniet.</div>
+    <div>Voluptatibus commodi, quis itaque odit doloremque voluptatem sit! Excepturi culpa amet doloribus. Ducimus eius
+      impedit ipsam dolorem excepturi sunt atque nulla a asperiores laudantium adipisci modi optio, libero repellendus
+      exercitationem.</div>
+    <div>Ut accusantium, dolorem mollitia incidunt repudiandae eum reiciendis magni harum, quae provident perspiciatis
+      repellat ullam rem consectetur consequuntur possimus libero, molestiae iusto aspernatur. Sequi, culpa, iure eius
+      praesentium sed architecto.</div>
+    <div>Voluptate quis eius tenetur eos, pariatur aperiam! Laudantium quo recusandae libero porro, ad quae voluptatibus
+      maiores numquam dolore, nihil suscipit vitae iusto reiciendis placeat facere modi aliquid eum optio voluptates?
+    </div>
+    <div>Consequatur atque quas voluptas maiores, sapiente suscipit! Omnis nam quidem veritatis modi beatae est
+      reiciendis eveniet similique saepe ratione cumque voluptatibus consequatur molestiae sed qui placeat, provident
+      doloremque et quasi?</div>
+    <div>Asperiores et dolorum voluptate iusto odio cum blanditiis. Harum illo, id laborum repellendus, animi quos iusto
+      assumenda quas labore beatae, possimus tenetur. Sed quibusdam incidunt placeat provident, ratione pariatur sint.
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="homeworkDomFirst.js"></script>
+
+</html>
